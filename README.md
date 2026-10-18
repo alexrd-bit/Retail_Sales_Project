@@ -21,4 +21,4 @@ python src/check_dataset.py
 
 Raw data and the virtual environment are excluded from Git. The script writes aggregate reports only and leaves the workbook unchanged. No cleaning, hypothesis testing or forecasting has been performed.
 
-Before submission: verify the lecturer's specific Project Brief instructions, which were inaccessible at the supplied GitHub URL. The project brief is published in this repository; the lecturer’s instructions still require confirmation.
+The lecturer’s original PROJECT_BRIEF.md has been reviewed. It specifies submission in the repository used for autograded exercises, under `project/`. This is a new repository: confirm that it is the correct course repository before sending the link. The deadline is announced in class (before session 7). Submit through the same channel as the exercises.
