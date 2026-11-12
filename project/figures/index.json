@@ -1,0 +1,37 @@
+[
+  {
+    "file": "chart-01.png",
+    "title": "Pre-test target distribution: weekly units per selected UK product",
+    "traces": 1
+  },
+  {
+    "file": "chart-02.png",
+    "title": "Pre-test UK merchandise sales",
+    "traces": 1
+  },
+  {
+    "file": "chart-03.png",
+    "title": "H1: share of units from top 20% of products",
+    "traces": 2
+  },
+  {
+    "file": "chart-04.png",
+    "title": "Pre-test monthly comparison (partial years; exploratory only)",
+    "traces": 3
+  },
+  {
+    "file": "chart-05.png",
+    "title": "Validation permutation importance (training-only candidate)",
+    "traces": 1
+  },
+  {
+    "file": "chart-06.png",
+    "title": "Final holdout error by development-defined product volume",
+    "traces": 1
+  },
+  {
+    "file": "chart-07.png",
+    "title": "Final holdout: portfolio forecast versus recorded units",
+    "traces": 4
+  }
+]

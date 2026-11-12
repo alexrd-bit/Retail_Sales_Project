@@ -4,3 +4,11 @@ __pycache__/
 data/raw/
 data/processed/
 backups/
+
+project/results/*.html
+
+project/__pycache__/
+
+.ipynb_checkpoints/
+
+resources/

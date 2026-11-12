@@ -1,0 +1,22 @@
+{
+  "notebook_words": 2364,
+  "executed_code_cells": 12,
+  "numbered_headings_verified": 14,
+  "plotly_charts_with_png_fallback": 7,
+  "fresh_kernel_runtime_seconds": 6.428933333023451,
+  "python_verified": "3.12.14",
+  "independent_reload_prediction": 217.1455261410399,
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "dataset_bytes": 1298883,
+  "model_bytes": 58898,
+  "checks": [
+    "Official template headings retained",
+    "All code cells executed; no errors",
+    "No TODO or absolute machine path in notebook code",
+    "Seven chart PNG fallbacks and labelled axes checked",
+    "Fresh kernel below 600 seconds",
+    "Independent model reload matches saved prediction",
+    "Final metrics unchanged after presentation fixes",
+    "No customer or invoice identifiers in published dataset"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "selected_model": "Boosting",
+  "best_parameters": {
+    "model__learning_rate": 0.05,
+    "model__max_leaf_nodes": 7
+  },
+  "test_metrics": [
+    {
+      "Model": "Boosting tuned",
+      "MAE_units": 188.67755418568967,
+      "RMSE_units": 365.89882934274874,
+      "WAPE_pct": 64.98471648157232,
+      "bias_units": 25.038183501484585
+    },
+    {
+      "Model": "Previous week",
+      "MAE_units": 208.48,
+      "RMSE_units": 452.3852688014625,
+      "WAPE_pct": 71.80511614404716,
+      "bias_units": -1.1057142857142856
+    },
+    {
+      "Model": "Training mean",
+      "MAE_units": 262.43199285714286,
+      "RMSE_units": 449.38723711308705,
+      "WAPE_pct": 90.38737397841949,
+      "bias_units": 27.40982142857146
+    },
+    {
+      "Model": "Four-week mean",
+      "MAE_units": 177.69178571428571,
+      "RMSE_units": 363.68668705258614,
+      "WAPE_pct": 61.200975206530245,
+      "bias_units": -6.713214285714286
+    }
+  ],
+  "relative_wape_improvement_pct": 9.498487055981553,
+  "absolute_unit_error_reduction": 13861.712070017238,
+  "bootstrap_interval_pct": [
+    -3.075582097176814,
+    18.816945786508068
+  ],
+  "best_transparent_baseline": "Four-week mean",
+  "recommendation": "Keep the best transparent baseline; do not automate model-based purchasing",
+  "adoption_gate_passed": false,
+  "cohort_size": 50,
+  "test_product_weeks": 700,
+  "test_first_week": "2011-08-29",
+  "test_last_week": "2011-11-28",
+  "folds": [
+    {
+      "fold": 1,
+      "feature_set": "full",
+      "MAE_units": 209.12652899048283,
+      "RMSE_units": 388.4819337387981,
+      "WAPE_pct": 67.81290713484913,
+      "bias_units": -63.50958536327857,
+      "first_week": "2011-03-14",
+      "last_week": "2011-05-02",
+      "train_MAE": 188.79579178990406,
+      "baseline_WAPE_pct": 85.24988853309554
+    },
+    {
+      "fold": 2,
+      "feature_set": "full",
+      "MAE_units": 177.1753439644142,
+      "RMSE_units": 325.07447713490075,
+      "WAPE_pct": 69.69919117404179,
+      "bias_units": 55.94015345018647,
+      "first_week": "2011-05-09",
+      "last_week": "2011-06-27",
+      "train_MAE": 191.78783022788852,
+      "baseline_WAPE_pct": 69.71675845790716
+    },
+    {
+      "fold": 3,
+      "feature_set": "full",
+      "MAE_units": 170.1101943950706,
+      "RMSE_units": 353.72466204906743,
+      "WAPE_pct": 61.00911653085532,
+      "bias_units": -62.39234314183132,
+      "first_week": "2011-07-04",
+      "last_week": "2011-08-22",
+      "train_MAE": 184.80291755908604,
+      "baseline_WAPE_pct": 79.86389434327675
+    }
+  ],
+  "hypotheses": [
+    {
+      "Hypothesis": "H1: top 20% contribute >50%",
+      "Status": "supported",
+      "Evidence": "Pre-test quarter shares: 78.6%\u201381.7%; both markets"
+    },
+    {
+      "Hypothesis": "H2: November ratio >1.10 in both years",
+      "Status": "supported",
+      "Evidence": "2010 November ratio: 1.880; 2011 November ratio: 1.652"
+    },
+    {
+      "Hypothesis": "H3: WAPE falls at least 5% vs previous week",
+      "Status": "supported",
+      "Evidence": "Final WAPE improvement vs previous week: 9.50% (5% threshold)"
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "plotly": "6.9.0",
+    "joblib": "1.6.0"
+  },
+  "runtime_seconds": 6.428933333023451
+}

@@ -1,0 +1,82 @@
+{
+  "source": "https://doi.org/10.24432/C5CG6D",
+  "licence": "CC BY 4.0",
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "source_rows": 1067371,
+  "source_missing": {
+    "Invoice": 0,
+    "StockCode": 0,
+    "Description": 4382,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "Price": 0,
+    "Customer ID": 243007,
+    "Country": 0
+  },
+  "audit": [
+    {
+      "step": "Exact duplicate invoice lines: retain first",
+      "before": 1067371,
+      "removed": 34335,
+      "after": 1033036
+    },
+    {
+      "step": "Valid date and country",
+      "before": 1033036,
+      "removed": 0,
+      "after": 1033036
+    },
+    {
+      "step": "Separate credit/cancellation invoices",
+      "before": 1033036,
+      "removed": 19104,
+      "after": 1013932
+    },
+    {
+      "step": "Positive units and prices only",
+      "before": 1013932,
+      "removed": 6019,
+      "after": 1007913
+    },
+    {
+      "step": "Merchandise-code proxy: five digits and optional letter",
+      "before": 1007913,
+      "removed": 5908,
+      "after": 1002005
+    },
+    {
+      "step": "Complete Monday-Sunday weeks only",
+      "before": 1002005,
+      "removed": 31096,
+      "after": 970909
+    }
+  ],
+  "complete_week_start": "2009-12-07",
+  "complete_week_end": "2011-11-28",
+  "retained_transaction_lines": 970909,
+  "aggregate_rows": 236901,
+  "positive_duplicate_units_removed": 215157.0,
+  "positive_duplicate_value_removed_gbp": 496334.12,
+  "eligible_units": 10787756.0,
+  "eligible_value_gbp": 18842807.84,
+  "large_positive_lines_above_1000_units_retained": 290,
+  "missing_customer_ids_retained": 217261,
+  "missing_descriptions_retained": 0,
+  "sku_count": 4672,
+  "published_columns": [
+    "StockCode",
+    "market",
+    "week_start",
+    "units",
+    "gross_sales_gbp",
+    "lines"
+  ],
+  "weekly_file_sha256": "7161c7a85eab3b9761dfed0c350283dd9d95f6b73c09a3f8d243d5db83fe62fb",
+  "notes": [
+    "Audit removals are sequential, not overlapping.",
+    "Source workbook unchanged.",
+    "No customer identifiers, invoice identifiers or descriptions published.",
+    "Weekly aggregates disclose historical business activity; no person-level predictions.",
+    "Code pattern is a merchandise proxy, not a verified product taxonomy."
+  ]
+}
